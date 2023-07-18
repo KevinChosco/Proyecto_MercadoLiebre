@@ -3,6 +3,8 @@ const app=express();
 const path=require("path");
 
 app.listen(8080,()=>console.log("Servidor escuchando en el puerto 8080"));
+app.use(express.static("public"));
+
 app.get("/",function(req,res){
-    res.sendFile(path.join(__dirname,"/view/home.html"));
+    res.sendFile(path.join(__dirname,"./view/home.html"));
 })
