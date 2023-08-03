@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+    margin:0px;
+}
+html, body{
+    height: 100%;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    height: 330px;
+    background-color: #EAC926;
+}
+.logo{
+    width: 200px;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 15px;
+}
+form{
+    margin-left: 30px;
+}
+h1{
+    font-size: 24px;
+    color: #666;
+}
+h2{
+    font-size: 16px;
+}
+.precio{
+    font-size: 18px;
+}
+.descuento .descripcion{
+    font-size: 16px;
+}
+nav ul{
+    padding-left: 0px;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+}
+p{
+    text-align: center;
+    font-size: 12px;
+}
+img{
+    width: 200px;
+    margin: auto;
+}
+.menu-burger{
+    background-color: #03264C;
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+    text-align: center;
+    margin: auto;
+    
+}
+.icono{
+   margin-top: 15px;
+}
+main{
+background-color:#ebebeb;
+text-align: center;
+padding-bottom: 30px;
+}
+article{
+    width: 90%;
+    background-color: white;
+    margin: auto;
+}
+.footer{
+text-align: center;
+padding-top: 100px;
+}
+.footer-title{
+    width: 80%;
+    padding-bottom: 50px;
+}
+.icono2{
+    padding-bottom: 20px;
+}
