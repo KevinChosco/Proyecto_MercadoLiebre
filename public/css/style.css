@@ -5,8 +5,9 @@
     4-120px
 */
 * {
-  box-sizing: border-box;
   margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 html,
 body {
@@ -43,23 +44,39 @@ p.inicio {
 .menu-navegation {
   display: none;
 }
+.box-detail{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
 .box-detail .precio {
-  margin-top: 5px;
   font-size: 18px;
+  width: 30%;
 }
 .box-detail .descripcion {
     display: none;
   font-size: 16px;
+  padding-top: 15px;
+  width: 100%;
 }
 .box-detail .descuento {
   color: #39b54a;
   font-size: 16px;
+  width: 70%;
 }
 .box-detail .circle-fast {
-  border: 1px solid #39b54a;
-  border-radius: 25px;
+  display: block;
+  font-size:16px;
+  padding: 6px;
   width: 30px;
   height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+  
 }
 nav ul {
   padding-left: 0px;
