@@ -20,17 +20,49 @@ header {
   background-color: #eac926;
   padding-bottom: 40px;
 }
-.logo {
-  width: 200px;
-  margin-top: 30px;
-  margin-left: 30px;
-  margin-bottom: 15px;
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
 }
-form {
-  margin-left: 30px;
+.card {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card-header {
+  width: 50%;
+  padding: 20px;
+}
+.logo {
+  width: 100%;
+}
+.card-buscador {
+  padding-top: 20px;
+  width: 50%;
+  display: flex;
+}
+.buscador {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: 35px;
+}
+.buscador > input {
+  width: 100%;
+  border-radius: 5px 0px 0px 5px;
+  border: none;
+  padding: 6px;
+}
+.icono-search {
+  height: 35px;
+  width: 20px;
+  margin-right: 20px;
+  background-color: white;
+  border: none;
+  border-radius: 0px 5px 5px 0px;
 }
 h1 {
-    padding: 15px;
+  padding: 15px;
   font-size: 24px;
   color: #666;
 }
@@ -38,35 +70,42 @@ h2 {
   font-size: 16px;
 }
 p.inicio {
-    margin-top: 15px;
+  margin-top: 15px;
   margin-bottom: 40px;
+  width: 100%;
 }
 .menu-navegation {
   display: none;
 }
-.box-detail{
+.banner {
+  width: 100%;
+}
+.banner > img {
+  width: 100%;
+}
+.box-detail {
   position: relative;
   display: flex;
   flex-wrap: wrap;
 }
-.box-detail .precio {
+.precio {
   font-size: 18px;
   width: 30%;
 }
-.box-detail .descripcion {
-    display: none;
+.descripcion {
+  display: none;
   font-size: 16px;
   padding-top: 15px;
   width: 100%;
 }
-.box-detail .descuento {
+.descuento {
   color: #39b54a;
   font-size: 16px;
   width: 70%;
 }
 .box-detail .circle-fast {
   display: block;
-  font-size:16px;
+  font-size: 16px;
   padding: 6px;
   width: 30px;
   height: 30px;
@@ -76,7 +115,12 @@ p.inicio {
   position: absolute;
   right: 20px;
   top: -15px;
-  
+}
+.detail-articles .box-detail .descripcion-producto {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
 }
 nav ul {
   padding-left: 0px;
@@ -94,8 +138,7 @@ p {
   font-size: 12px;
 }
 img {
-  width: 200px;
-  margin: auto;
+  width: 100%;
 }
 .menu-burger {
   background-color: #1259c3;
@@ -137,21 +180,119 @@ article {
 .icono2 {
   padding-bottom: 20px;
 }
-@media (min-width: 361px){
-    .menu-navegation{
-        display: inherit;
-    }
-    .menu-burger{
-        display: none;
-    }
-    .box-detail .descripcion {
-      display: inherit;
-      font-size: 16px;
-    }
-    .detail-articles{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
+@media (min-width: 361px) {
+  header {
+    padding-bottom: 20px;
+  }
+  .contenedor {
+    justify-content: space-between;
+  }
+  .card-header {
+    width: 33%;
+  }
+  .card-buscador {
+    width: 33%;
+  }
+  .buscador {
+    margin-right: 10px;
+  }
+  .buscador > input {
+    border-radius: 5px;
+  }
+  .icono-search {
+    height: 35px;
+    width: 10%;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  p.inicio {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    width: 33%;
+    align-items: center;
+  }
+  .section-articles {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  article {
+    width: 45%;
+  }
+  .box-detail {
+    display: flex;
+  }
+  .box-detail .precio {
+    font-size: 18px;
+    width: 100%;
+  }
+  .box-detail .descuento {
+    color: #39b54a;
+    font-size: 16px;
+    width: 100%;
+  }
+  .menu-navegation {
+    display: inherit;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .menu-navegation ul {
+    width: 40%;
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .menu-navegation ul .nav-icon{
+    font-size: 1em;
+    padding-left: 5px;
+  }
+  .menu-burger {
+    display: none;
+  }
+  .box-detail .descripcion {
+    display: inherit;
+    font-size: 16px;
+  }
+  .detail-articles {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+  h1{
+    text-align: initial;
+  }
 }
-@media (min-width:769px){
-
+@media (min-width: 769px) {
+  .card-header{
+    width: 40%;
+  }
+  .card-buscador{
+    align-items: center;
+    width: 27%;
+    padding-top: 0px;
+  }
+  p.inicio{
+    width: 30%;
+    align-items: center;
+  }
+  .section-articles {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  article {
+    width: 20%;
+  }
+  .box-detail .precio {
+    font-size: 18px;
+  }
+  .box-detail .descuento {
+    color: #39b54a;
+  }
+  .menu-navegation ul {
+    width: 35%;
+  }
 }
