@@ -168,6 +168,10 @@ article {
 }
 .box-detail p {
   text-align: initial;
+  transition: transform 1000ms;
+}
+.car-buy:hover{
+  transform: rotateZ(-90deg);
 }
 .footer {
   text-align: center;
@@ -233,6 +237,9 @@ article {
   background-color: #ffe042;
   color: white;
   font-size: 20px;
+}
+.button-form-login:hover{
+  background-color: #0022AA;
 }
 .avatar-img{
   width: 45%;
@@ -324,7 +331,14 @@ article {
   h1{
     text-align: initial;
   }
-  
+/*----Footer---*/
+.footer{
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-title{
+  width: 30%;
+}
 /*----Pagina de Login-----*/
 .form-login{
   width: 100%;
