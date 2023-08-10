@@ -182,7 +182,7 @@ article {
 }
 
 /*Pagina resgiter.html*/
-.register-main{
+.register-main,.login-main{
   background-color: #ffff;
 }
 .contenedor-form{
@@ -197,14 +197,14 @@ article {
   color: black;
   text-align: center;
 }
-.form-register{
+.form-register,.form-login{
   width: 100%;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
 }
-.form-register>input{
+.form-register>input,.form-login>input{
   width: 90%;
   margin: 10px auto;
   padding: 10px;
@@ -224,17 +224,21 @@ article {
   font-size: 15px;
   text-align: start;
 }
-.button-form{
+.button-form,.button-form-login{
   width: 90%;
   margin: 5px auto;
   padding: 10px;
   border-radius: 10px;
   border: none;
-  background-color: rgb(255, 77, 234);
+  background-color: #ffe042;
   color: white;
   font-size: 20px;
 }
-/*Medias Queries*/
+.avatar-img{
+  width: 45%;
+}
+
+/*---Medias Queries------*/
 @media (min-width: 361px) {
   header {
     padding-bottom: 20px;
@@ -320,7 +324,35 @@ article {
   h1{
     text-align: initial;
   }
+  
+/*----Pagina de Login-----*/
+.form-login{
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
+.form-login>input{
+  width: 70%;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.button-form-login{
+  width: 50%;
+  margin: 5px auto;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: #fadc45;
+  color: white;
+  font-size: 20px;
+}
+}
+
+/*-----MEDIAS QUERIES-----*/
 @media (min-width: 769px) {
   .card-header{
     width: 40%;
@@ -392,6 +424,35 @@ article {
   text-align: start;
 }
 .button-form{
+  width: 50%;
+  margin: 5px auto;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(255, 58, 58);
+  color: white;
+  font-size: 20px;
+}
+.avatar-img{
+  width: 30%;
+}
+
+/*----Pagina de Login-----*/
+.form-login{
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.form-login>input{
+  width: 70%;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.button-form-login{
   width: 50%;
   margin: 5px auto;
   padding: 10px;
