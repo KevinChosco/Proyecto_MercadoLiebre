@@ -180,6 +180,61 @@ article {
 .icono2 {
   padding-bottom: 20px;
 }
+
+/*Pagina resgiter.html*/
+.register-main{
+  background-color: #ffff;
+}
+.contenedor-form{
+  padding: 30px 0px 30px 0px;
+  width:90%;
+  margin: 15px auto;
+  background-color: aquamarine;
+  border-radius: 10px;
+}
+.title-form{
+  font-size: 30px;
+  color: black;
+  text-align: center;
+}
+.form-register{
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.form-register>input{
+  width: 90%;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 10px;
+}
+.form-register>select{
+  width: 90%;
+  padding: 10px;
+  border-radius: 10px;
+  margin: auto;
+}
+.select-categoria{
+  width: 90%;
+  margin: auto;
+}
+.checkbox{
+  font-size: 15px;
+  text-align: start;
+}
+.button-form{
+  width: 90%;
+  margin: 5px auto;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(255, 77, 234);
+  color: white;
+  font-size: 20px;
+}
+/*Medias Queries*/
 @media (min-width: 361px) {
   header {
     padding-bottom: 20px;
@@ -295,4 +350,55 @@ article {
   .menu-navegation ul {
     width: 35%;
   }
+
+/*----Pagina resgiter.html----*/
+.contenedor-form{
+  padding: 30px 0px 30px 0px;
+  width:40%;
+  margin: 15px auto;
+  background-color:#ffe565 ;
+  border-radius: 10px;
+}
+.title-form{
+  font-size: 40px;
+  color: black;
+  text-align: center;
+}
+.form-register{
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.form-register>input{
+  width: 90%;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 10px;
+}
+.form-register>select{
+  width: 90%;
+  padding: 10px;
+  border-radius: 10px;
+  margin: auto;
+}
+.select-categoria{
+  width: 90%;
+  margin: auto;
+}
+.checkbox{
+  font-size: 15px;
+  text-align: start;
+}
+.button-form{
+  width: 50%;
+  margin: 5px auto;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(255, 58, 58);
+  color: white;
+  font-size: 20px;
+}
 }

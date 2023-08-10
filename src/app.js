@@ -10,3 +10,9 @@ app.listen(8080,()=>console.log("Servidor escuchando en el puerto 8080"));
 app.get("/",function(req,res){
     res.sendFile(path.join(__dirname,"./view/home.html"));
 })
+app.get("/register",function(req,res){
+    res.sendFile(path.join(__dirname,"./view/register.html"))
+})
+app.post("/home.html",function(req,res){
+    res.sendFile(path.join(__dirname,"./view/home.html"))
+})
